@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+    weeman:
+      build: ./weeman
+      ports:
+        - "8080:31337"
+
+    nginx:
+      build: ./nginx
+      links:
+        - weeman
+      ports:
+        - "80:80"      
+
