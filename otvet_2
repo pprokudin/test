@@ -1,0 +1,1 @@
+%{NOTSPACE:host} %{DATA:entry} %{IPV4} \[%{MONTHDAY}\/%{MONTH}\/%{YEAR}\:%{HOUR}\:%{MINUTE}\:%{SECOND} %{INT}\] %{WORD:duration} %{NUMBER:bytes} %{WORD} \"%{WORD:method} %{URIPATH:request} %{NOTSPACE:protocol}\" %{INT:status_code} ?%{GREEDYDATA:time}
